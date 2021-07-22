@@ -1,0 +1,101 @@
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+}
+
+.success {
+  background-color: #00c06a;
+  color: white;
+}
+
+.failure {
+  background-color: #ff0000;
+  color: white;
+}
+
+@keyframes colorChangeLoading {
+  from {background-color: #efb485;}
+  to {background-color: #e27822;}
+}
+
+.loading {
+  animation: colorChangeLoading 1.25s infinite ease-in-out;
+  color: white;
+}
+
+.storybook-button--primary {
+  color: white;
+  background-color: #1ea7fd;
+}
+
+@keyframes colorChange {
+  from {background-color: #1ea7fd;}
+  to {background-color: #38C1FF;}
+}
+
+.storybook-button--primary:hover {
+  animation: colorChange 0.5s forwards;
+}
+
+@keyframes boxShadow {
+  from {box-shadow: 0 0 0 0 rgba(21, 156, 228, 0.4);}
+  to {box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);}
+}
+
+.storybook-button--primary:focus {
+  outline: none;
+  animation: boxShadow 0.25s forwards;
+}
+
+.storybook-button--primary--disabled {
+  color: white;
+  cursor: not-allowed;
+  background-color: #51DAFF;
+}
+
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+
+@keyframes colorChangeSecondary {
+  from {background-color: white; color: #333}
+  to {background-color: #333; color: white}
+}
+
+.storybook-button--secondary:hover {
+  animation: colorChangeSecondary 0.5s forwards;
+}
+
+@keyframes boxShadowSecondary {
+  from {box-shadow: 0 0 0 0 #333;}
+  to {box-shadow: 0 0 0 3px #333;}
+}
+
+.storybook-button--secondary:focus {
+  animation: boxShadowSecondary 0.25s forwards;
+}
+
+.storybook-button--secondary--disabled {
+  cursor: not-allowed;
+  color: #808080;
+}
+
+.storybook-button--small {
+  font-size: 12px;
+  padding: 10px 16px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
