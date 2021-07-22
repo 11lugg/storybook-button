@@ -13,4 +13,4 @@ I completed the tasks below:
 - You can also reset the button back to its initial state by clicking on the button in the table head in the controls tab
 - If you click on the Docs tab, you can see the button attributes/states in more detail.
 
-I was hoping to use SCSS to make use of global variables for colors. However, I was having the same dependencies conflict as before. I didn't spend much time trying to solve this instead focusing my attention on completing the task in hand.
+I was hoping to use SCSS to make use of global variables for colors. However, I was having the same dependency conflict as before. I didn't spend much time trying to solve this instead focusing my attention on completing the task in hand.
